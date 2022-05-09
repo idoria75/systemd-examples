@@ -1,0 +1,10 @@
+[Unit]
+Description=Example for simple service
+
+[Service]
+Type=simple
+User=ivan
+ExecStart=/bin/bash -c /usr/local/bin/systemd-examples/simple.sh
+
+[Install]
+WantedBy=multi-user.target
